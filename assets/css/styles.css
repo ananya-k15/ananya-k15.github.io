@@ -377,6 +377,23 @@ img {
   align-items: center;
 }
 
+/*==================== CURSOR ====================*/
+.circle {
+  width: 500px;
+  height: 500px;
+  /* background: linear-gradient(to top left, #f0ff7d, #f5b83f); */
+  /* background-color: white; */
+  border-radius: 50%;
+  opacity: 0.3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -20px 0 0 -20px;
+  pointer-events: none;
+  /* mix-blend-mode: multiply; */
+  z-index: 10;
+}
+
 /*==================== ABOUT ====================*/
 .about__img{
   width: 200px;
