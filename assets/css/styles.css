@@ -80,7 +80,6 @@ body.dark-theme{
   --container-color: hsl(var(--hue-color), 29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
-
 }
 
 /*========== Button Dark/Light ==========*/
@@ -378,19 +377,24 @@ img {
 }
 
 /*==================== CURSOR ====================*/
+.cursor__bg{
+  visibility: hidden;
+}
+
 .circle {
-  width: 500px;
-  height: 500px;
-  /* background: linear-gradient(to top left, #f0ff7d, #f5b83f); */
+  width: 600px;
+  height: 600px;
+  /* background: linear-gradient(to top left, #000000, #000000); */
   /* background-color: white; */
   border-radius: 50%;
-  opacity: 0.3;
-  position: absolute;
+  opacity: 0.2;
+  /* position: absolute; */
+  position: fixed;
   top: 50%;
   left: 50%;
   margin: -20px 0 0 -20px;
   pointer-events: none;
-  /* mix-blend-mode: multiply; */
+  mix-blend-mode: multiply;
   z-index: 10;
 }
 
@@ -925,6 +929,13 @@ img {
   }
   .home__social{
     transform: translateX(-2rem);
+  }
+  .home__social-icon{
+    font-size: 1.5rem;
+  }
+
+  .cursor__bg{
+    visibility: visible;
   }
 }
 

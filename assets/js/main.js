@@ -32,7 +32,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 /*==================== CURSOR EFFECT ====================*/
 // create instance of kinet with custom settings
 var kinet = new Kinet({
-    acceleration: 0.06,
+    acceleration: 0.03,
     friction: 0.20,
     names: ["x", "y"],
   });
