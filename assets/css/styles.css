@@ -80,6 +80,7 @@ body.dark-theme{
   --container-color: hsl(var(--hue-color), 29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+  
 }
 
 /*========== Button Dark/Light ==========*/
@@ -382,21 +383,37 @@ img {
 }
 
 .circle {
-  width: 600px;
-  height: 600px;
-  /* background: linear-gradient(to top left, #000000, #000000); */
-  /* background-color: white; */
-  border-radius: 50%;
-  opacity: 0.2;
-  /* position: absolute; */
   position: fixed;
-  top: 50%;
-  left: 50%;
-  margin: -20px 0 0 -20px;
+  width: 500px;
+  height: 500px;
+  transition: all .5 ease-out;
+  z-index: -2;
+  filter: blur(118px);
+  background: conic-gradient(from 20.34deg at -52.87% 105.23%,#8A61FF -.5deg,#FF9929 50.3deg,#F4CC58 64.84deg,#EBFF00 150deg,#FF9900 243.91deg,#FFD376 290.16deg,#8A61FF 359.5deg,#FF9929 410.3deg);
+  background-color: transparent;
+  border-radius: 50%;
+  /* display: none; */
+  opacity: 0.3;
+  top: 25%;
+  left: 30%;
+  margin: 0;
+  padding: 0;
   pointer-events: none;
-  mix-blend-mode: multiply;
-  z-index: 10;
+  /* mix-blend-mode: multiply; */
 }
+
+/* .circle{
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  transition: all .5s ease-out;
+  z-index: -2;
+  filter: blur(118px);
+  border-radius: 50%;
+  display: none;
+  opacity: .3;
+  background-color: transparent;
+} */
 
 /*==================== ABOUT ====================*/
 .about__img{
@@ -569,8 +586,13 @@ img {
   transform: rotate(-180deg);
 }
 
-/*==================== SERVICES ====================*/
-
+/*==================== PROJECTS ====================*/
+.project__header{
+  display: flex;
+  border-radius: 2rem   ;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+  margin-bottom: var(--mb-1);
+}
 
 /* Active Modal */
 
