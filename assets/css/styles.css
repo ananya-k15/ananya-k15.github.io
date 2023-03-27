@@ -956,6 +956,7 @@ img {
     width: 350px;
   }
   .about__description{
+    margin-top: var(--mb-1);
     text-align: initial;
   }
   .about__info{
