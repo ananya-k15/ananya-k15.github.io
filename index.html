@@ -40,15 +40,15 @@
                             </a>
                         </li>
                         <li class="nav__item">
+                            <a href="#awards" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Certifications
+                            </a>
+                        </li>
+                        <li class="nav__item">
                             <a href="#projects" class="nav__link">
                                 <i class="uil uil-cog nav__icon"></i> Projects
                             </a>
                         </li>
-                        <!-- <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">
-                                <i class="uil uil-scenery nav__icon"></i> Portfolio
-                            </a>
-                        </li> -->
                         <li class="nav__item">
                             <a href="#contact" class="nav__link">
                                 <i class="uil uil-message nav__icon"></i> Contact
@@ -82,7 +82,7 @@
                                 <i class="uil uil-github-alt"></i>
                             </a>
                             <a href="mailto:ananyakumar5492@gmail.com?cc=a327kuma@uwaterloo.ca" target="_blank" class="home__social-icon">
-                                <i class="uil uil-google"></i>
+                                <i class="uil uil-at"></i>
                             </a>
                         </div>
 
@@ -120,9 +120,6 @@
 
                     <div class="home__scroll">
                         <a href="#about" class="home__scroll-button button--flex">
-                            <!-- <i class="uil uil-mouse-alt-2 home__scroll-mouse"></i>  -->
-                            <!-- <span class="home__scroll-name">scroll</span> -->
-                            <!-- <i class="uil uil-arrow-down home__scroll-arrow"></i> -->
                             <i class="uil uil-arrow-circle-down home__scroll-arrow"></i>
                         </a>
                     </div>
@@ -141,39 +138,17 @@
                         <p class="about__description">I'm Ananya, a computer science 
                             student at the University of Waterloo with a passion for 
                             programming and creating innovative solutions. When I'm not 
-                            coding, you can find me curled up with a good fiction - 
-                            I'm always on the lookout for brand-new recommendations! 
+                            coding, you can find me curled up with a good fiction novel - 
+                            I'm always on the lookout for recommendations! 
                             I also happen to have a weakness for hazelnut drinks, 
                             whether they're hot or cold. 
                             <br>
                             <br>
-                            Need a hand for an interesting project? I have two - let's collaborate!
+                            Need a hand for an exciting project? I have two - let's collaborate!
                             <br>
                             <br>
                             And did I mention I'm willing to relocate for an internship? 
                         </p>
-
-                        <!-- <div>
-                            <span class="about__info-title">A fun fact about me</span>
-                            <span class="about__info-name">Live projects</span>
-                        </div> -->
-
-                        <!-- <div class="about__info">
-                            <div>
-                                <span class="about__info-title">04+</span>
-                                <span class="about__info-name">Live <br> projects</span>
-                            </div>
-
-                            <div>
-                                <span class="about__info-title">02+</span>
-                                <span class="about__info-name">Internships <br> completed</span>
-                            </div>
-
-                            <div>
-                                <span class="about__info-title">05+</span>
-                                <span class="about__info-name">Certifications <br> finished</span>
-                            </div>
-                        </div> -->
 
                         <div class="about__buttons">
                             <a download="" href="assets/pdf/2A.pdf" class="button button--flex">
@@ -325,7 +300,7 @@
             </section>
 
             <!--==================== AWARDS AND CERTIFICATION ====================-->
-            <section class="awards section">
+            <section class="awards section" id="awards">
                 <h2 class="section__title">Certifications</h2>
                 <span class="section__subtitle">My professional credentials and licences.</span>
 
@@ -438,21 +413,20 @@
                     <div class="swiper-wrapper"> 
                         <!--==================== PROJECT 1 ====================-->
                         <div class="projects__content grid swiper-slide">
-                            <img src="assets/img/cuisine-connection.png" alt="" class="project__header">
+                            <a href="https://github.com/ananya-k15/cuisine-connection">
+                                <img src="assets/img/cuisine-connection.png" alt="Go to GitHub Repository" class="project__header">
+                            </a>
                             
                             <p class="project__description">Machine learning model that creates 
                                 a decision tree to classify recipes into cuisines based on their ingredients.
                             </p>
-                            <!-- <a href="#" class="button button--flex button--small projects__button">
-                                GitHub
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a> -->
                         </div>
 
                         <!--==================== PROJECT 2 ====================-->
                         <div class="projects__content grid swiper-slide">
-                            <img src="assets/img/coffee-clusters.png" alt="" class="project__header">
-
+                            <a href="https://github.com/ananya-k15/coffee-clusters">
+                                <img src="assets/img/coffee-clusters.png" alt="" class="project__header">
+                            </a>
                             <p class="project__description">Supervised clustering machine learning
                                 model that predicts the best location to open a coffee shop in New Delhi. 
                             </p>
@@ -460,7 +434,9 @@
 
                         <!--==================== PROJECT 3 ====================-->
                         <div class="projects__content grid swiper-slide">
-                            <img src="assets/img/xyz-rendering.png" alt="" class="project__header">
+                            <a href="https://github.com/ananya-k15/xyz-rendering">
+                                <img src="assets/img/xyz-rendering.png" alt="" class="project__header">
+                            </a>
 
                             <p class="project__description">Dash app for displaying and adding 
                                 gradients to 3D models using meshio.
@@ -469,7 +445,9 @@
 
                         <!--==================== PROJECT 4 ====================-->
                         <div class="projects__content grid swiper-slide">
-                            <img src="assets/img/visualize.png" alt="" class="project__header">
+                            <a href="https://github.com/ananya-k15/visualize">
+                                <img src="assets/img/visualize.png" alt="" class="project__header">
+                            </a>
 
                             <p class="project__description">Sales analysis app that records, 
                                 tracks and generates custom charts based on the daily 
@@ -479,12 +457,12 @@
                     </div>
 
                     <!-- Add Arrows -->
-                    <!-- <div class="swiper-button-next">
+                    <div class="swiper-button-next">
                         <i class="uil uil-angle-right-b swiper-projects-icon"></i>
                     </div>
                     <div class="swiper-button-prev">
                         <i class="uil uil-angle-left-b swiper-projects-icon"></i>
-                    </div> -->
+                    </div>
 
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
@@ -513,15 +491,6 @@
 
                 <div class="contact__container container grid">
                     <div>
-                        <div class="contact__information">
-                            <i class="uil uil-phone contact__icon"></i>
-
-                            <div>
-                                <h3 class="contact__title">Call Me</h3>
-                                <span class="contact__subtitle">+1 (548) 333-1592</span>
-                            </div>
-                        </div>
-
                         <div class="contact__information">
                             <i class="uil uil-envelope contact__icon"></i>
 
@@ -617,7 +586,7 @@
                             <i class="uil uil-github-alt"></i>
                         </a>
                         <a href="mailto:ananyakumar5492@gmail.com?cc=a327kuma@uwaterloo.ca" target="_blank" class="footer__social">
-                            <i class="uil uil-google"></i>
+                            <i class="uil uil-at"></i>
                         </a>
                     </div>
                 </div>

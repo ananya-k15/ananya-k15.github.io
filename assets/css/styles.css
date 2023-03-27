@@ -612,11 +612,7 @@ img {
   text-align: center;
 }
 
-/* .projects__button:hover .button__icon{
-  transform: translateX(.25rem);
-}   */
-
-/* .swiper-button-prev::after,
+.swiper-button-prev::after,
 .swiper-button-next::after{
   content: '';
 }
@@ -624,15 +620,16 @@ img {
 .swiper-projects-icon{
   font-size: 2rem;
   color: var(--first-color);
+  padding-bottom: var(--mb-1);
 }
 
 .swiper-button-prev{
-  left: +1.75rem;
+  left: +1.25rem;
 }
 
 .swiper-button-next{
-  right: +1.75rem;
-} */
+  right: +1.25rem;
+}
 
 .swiper-container-horizontal > .swiper-pagination-bullets{
   bottom: -2.5rem;
@@ -956,7 +953,6 @@ img {
     width: 350px;
   }
   .about__description{
-    margin-top: var(--mb-1);
     text-align: initial;
   }
   .about__info{

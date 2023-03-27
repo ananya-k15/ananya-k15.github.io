@@ -108,16 +108,16 @@ let swiper = new Swiper(".projects__container", {
     centeredSlides: true,
     slidesPerView: "auto",
     coverflowEffect: {
-      rotate: 50,
+      rotate: 60,
       stretch: 100,
       depth: 100,
       modifier: 1,
       slideShadows: false,
     },
-    // navigation: {
-    //     nextEl: '.swiper-button-next',
-    //     prevEl: '.swiper-button-prev',
-    // },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
