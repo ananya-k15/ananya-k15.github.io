@@ -99,8 +99,30 @@ awardsHeader.forEach((el) =>{
     el.addEventListener('click', toggleAwards)
 })
 
-/*==================== SERVICES MODAL ====================*/
-
+/*==================== PROJECTS SWIPER ====================*/
+let swiper = new Swiper(".projects__container", {
+    effect: "coverflow",
+    grabCursor: true,
+    loop: true,
+    lazy: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 100,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false,
+    },
+    // navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    // },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 

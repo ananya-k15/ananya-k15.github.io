@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         
         <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
@@ -43,11 +43,11 @@
                                 <i class="uil uil-cog nav__icon"></i> Projects
                             </a>
                         </li>
-                        <li class="nav__item">
+                        <!-- <li class="nav__item">
                             <a href="#portfolio" class="nav__link">
                                 <i class="uil uil-scenery nav__icon"></i> Portfolio
                             </a>
-                        </li>
+                        </li> -->
                         <li class="nav__item">
                             <a href="#contact" class="nav__link">
                                 <i class="uil uil-message nav__icon"></i> Contact
@@ -416,42 +416,80 @@
                 <h2 class="section__title">Projects</h2>
                 <span class="section__subtitle">Examples of my work</span>
 
-                <div class="projects__container container">
-                    <div>
+                <div class="projects__container container swiper-container">
+                    <div class="swiper-wrapper"> 
                         <!--==================== PROJECT 1 ====================-->
-                        <div class="projects__content">
+                        <div class="projects__content grid swiper-slide">
                             <img src="assets/img/cuisine-connection.png" alt="" class="project__header">
+                            
+                            <p class="project__description">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Phasellus lobortis venenatis est, at condimentum ante 
+                                lobortis et. Maecenas vel ligula qu is arcu lacinia pellentesque. 
+                            </p>
+                            <!-- <a href="#" class="button button--flex button--small projects__button">
+                                GitHub
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a> -->
                         </div>
+
                         <!--==================== PROJECT 2 ====================-->
-                        <div class="projects__content">
+                        <div class="projects__content grid swiper-slide">
                             <img src="assets/img/coffee-clusters.png" alt="" class="project__header">
+
+                            <p class="project__description">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Phasellus lobortis venenatis est, at condimentum ante 
+                                lobortis et. Maecenas vel ligula qu is arcu lacinia pellentesque. 
+                            </p>
                         </div>
+
                         <!--==================== PROJECT 3 ====================-->
-                        <div class="projects__content">
+                        <div class="projects__content grid swiper-slide">
                             <img src="assets/img/xyz-rendering.png" alt="" class="project__header">
+
+                            <p class="project__description">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Phasellus lobortis venenatis est, at condimentum ante 
+                                lobortis et. Maecenas vel ligula qu is arcu lacinia pellentesque. 
+                            </p>
                         </div>
+
                         <!--==================== PROJECT 4 ====================-->
-                        <div class="projects__content">
+                        <div class="projects__content grid swiper-slide">
                             <img src="assets/img/visualize.png" alt="" class="project__header">
+
+                            <p class="project__description">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Phasellus lobortis venenatis est, at condimentum ante 
+                                lobortis et. Maecenas vel ligula qu is arcu lacinia pellentesque. 
+                            </p>
                         </div>
                     </div>
+
+                    <!-- Add Arrows -->
+                    <!-- <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-projects-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-projects-icon"></i>
+                    </div> -->
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
 
             <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
+            <!-- <section class="portfolio section" id="portfolio">
                 
-            </section>
+            </section> -->
 
             <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
+            <!-- <section class="project section">
 
-            </section>
+            </section> -->
 
             <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
+            <!-- <section class="testimonial section">
                 
-            </section>
+            </section> -->
 
             <!--==================== CONTACT ME ====================-->
             <section class="contact section" id="contact">
@@ -579,7 +617,7 @@
         </a>
 
         <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
         <!--==================== CURSOR ====================-->
         <div id="circle" class="circle">
