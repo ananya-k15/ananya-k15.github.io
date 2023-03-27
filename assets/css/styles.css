@@ -387,10 +387,6 @@ img {
 }
 
 /*==================== CURSOR ====================*/
-.cursor__bg{
-  visibility: hidden;
-}
-
 .circle {
   position: fixed;
   width: 500px;
@@ -407,6 +403,7 @@ img {
   margin: 0;
   padding: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 
 /*==================== ABOUT ====================*/
@@ -997,6 +994,10 @@ img {
   .footer__copy{
     margin-top: 4.5rem;
   }
+
+  .circle {
+    visibility: visible;
+  }
 }
 
 /* For large devices */
@@ -1009,10 +1010,6 @@ img {
   }
   .home__social-icon{
     font-size: 1.5rem;
-  }
-
-  .cursor__bg{
-    visibility: visible;
   }
 }
 
